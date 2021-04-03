@@ -15,13 +15,13 @@ function Home() {
         <div className="col-8"></div>
         <Navbar.Collapse id="responsive-navbar-nav" className="float-right ! important">        
           <Nav className ="navbar-nav ">
-            <Link to="/">Home</Link>             
+            <Link to="/beer">Home</Link>             
             <Link to="/fav" style={{paddingLeft:"10px"}}>Favourites</Link>           
           </Nav>
         </Navbar.Collapse>
       </Navbar>
       <Switch>
-       <Route exact path="/" component={Display}/>
+       <Route exact path="/beer" component={Display}/>
       <Route path="/fav" component={Favourites}/>     
       </Switch>
         </div>
